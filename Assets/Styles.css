@@ -1,0 +1,71 @@
+*{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+::selection{
+    color: blue;
+    text-decoration-line: overline dotted blue;
+    cursor: pointer;
+}
+.start-btn, .buttons, .quiz-cards, .result-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0, 5px, 10px, 0;
+}
+.start-btn{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: tan;
+    cursor: pointer;
+}
+.quiz-cards{
+    width: 540px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.quiz-cards .buttons{
+    margin: 0 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: 0.3s ease;
+}
+
+.buttons .restart .quit{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.timer{
+    position: relative;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+    }
